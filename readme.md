@@ -1,4 +1,4 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](./HP/zdj readme.jpg)
 
 # WTF Webpack Starter Kit 
 
