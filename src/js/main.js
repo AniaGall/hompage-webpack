@@ -3,6 +3,16 @@ import '../scss/style.scss';
 import moment from 'moment';
 console.log(moment().startOf('day').fromNow());
 
+const startOfDay = moment().startOf('day').fromNow();
+
+const timePlaceholder = document.querySelector('.time--js');
+
+timePlaceholder.innerHTML = startOfDay;
+
+console.log(startOfDay);
+
+
+
 const firstName = "Ania";
 const age = 37;
 
