@@ -1,4 +1,4 @@
-![cover](./HP/zdj readme.jpg)
+![cover](./HP/zdj.jpg)
 
 # WTF Webpack Starter Kit 
 
