@@ -68,7 +68,7 @@ function createContent(querySelectorContent, content) {
 
   element.innerHTML = content;
 }
-createContent(".new-first__header--js", "Witajcie na mojej stronie");
+createContent(".new-first__header--js", "🦋Witajcie na mojej stronie🦋");
 
 const myObject = {
     greet: (age, firstName) => {
@@ -86,7 +86,7 @@ console.log(
 
     button.addEventListener('click', () => {
       const element = document.querySelector(".new-first__header--js");
-      element.innerHTML = `Witam wszystkich na mojej stronie.`;
+      element.innerHTML = `🦋Witam wszystkich na mojej stronie.🦋`;
       element.classList.add('klasa-z-js');
     });
 
@@ -97,3 +97,5 @@ console.log(
      nav.classList.toggle('navigation--open');
      nav.classList.toggle('flex');
    }) 
+
+   

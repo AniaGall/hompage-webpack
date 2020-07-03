@@ -44,7 +44,7 @@ h3 {
   color: #542344;
 }
 #top {
-  background: rgba(216, 125, 64, 0.897);
+  background: rgba(204, 119, 159, 0.897);
   width: 100%;
 }
 
@@ -53,6 +53,18 @@ a {
 }
 nav a {
   color: #250223;
+}
+
+@keyframes emotek {
+0% {
+  transform: scale(1);
+}
+50% {
+  transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .new {
@@ -66,10 +78,17 @@ nav a {
     top: 0;
   }
   &-first__header {
-    background: rgba(226, 107, 28, 0.897);
+    background: rgba(210, 205, 212, 0.897);
     border-width: 10;
     border-style: solid;
     border-color: #fff;
+    display: inline-block;
+    animation: emotek 1s ease-in;
+
+  }
+  &-first__header--js {
+    display: inline-block;
+    animation: emotek 1s ease-in;
   }
 }
 .navigation {
@@ -99,8 +118,12 @@ nav a {
   &__title {
     background: #fff;
     color: #2e294e;
+    transition: color 2s linear;
     border-style: solid;
     border-color: #2e294e;
+    &:hover {
+      color: #d196dd;
+    }
   }
 }
 
@@ -154,6 +177,7 @@ nav a {
   padding: 8px;
 }
 
+
 .grid {
   display: grid;
 }
@@ -178,7 +202,8 @@ nav a {
   grid-area: aside;
 }
 .klasa-z-js {
-  background: #7ef760;
+  background: #f2f8ad;
+  animation: emotek 1s ease-in;
 }
 
 .hamburger {

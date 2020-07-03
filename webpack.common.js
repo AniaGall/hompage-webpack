@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     main: "./src/js/main.js",
     welcome: "./src/js/welcome.js",
+    zadania: "./src/js/zadania.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -60,14 +61,20 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/nauka-css.html",
       inject: true,
-      chunks: ["main", "welcome"],
+      chunks: ["main", "welcome", "zadania"],
       filename: "nauka-css.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/pages/nauka-html.html",
       inject: true,
-      chunks: ["main", "welcome"],
+      chunks: ["main", "welcome", "zadania"],
       filename: "nauka-html.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/zadania-domowe.html",
+      inject: true,
+      chunks: ["main", "welcome", "zadania"],
+      filename: "zadania-domowe.html",
     }),
   ],
 };
